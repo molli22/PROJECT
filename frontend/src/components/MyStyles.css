@@ -1,0 +1,27 @@
+
+.primary{
+    color: orange;
+}
+
+.CurrentBox{
+ border-style: double;
+}
+
+
+
+
+
+
+
+
+
+/* #box1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item{
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin: 5px;
+} */
