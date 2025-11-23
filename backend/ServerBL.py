@@ -14,11 +14,13 @@ async def handle_message(websocket, message):
     data = msg.get("data")
 
     if action == "register":
-        username = data["username"]
+        name = data["name"]
+        surname = data["surname"]
+        email = data["email"]
         password = data["password"]
-        fullname = data["fullname"]
+        role = data["role"]
         try:
-            db.add_user(username, password, fullname)
+            db.add_user(name, surname, email, password, role)
             await websocket.send(send_message("register_success", "נרשמת בהצלחה!"))
         except Exception as e:
             await websocket.send(send_message("register_failed", str(e)))
@@ -35,6 +37,12 @@ async def handle_message(websocket, message):
         username = data["username"]
         grades = db.get_grades(username)
         await websocket.send(send_message("grades_list", grades))
+
+    elif action == "get_working_days":
+        teacher_id = data
+        days = db.get_working_days(teacher_id)
+        await websocket.send(send_message("working_days", days))
+   
 
 async def client_handler(websocket):
     connected_clients.add(websocket)

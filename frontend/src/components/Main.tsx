@@ -23,14 +23,14 @@ function Main() {
         <UpcomingExam timeLeft="2:40:37" />
       </div>
       <div className="buttons-area">
-        <FuncClick nameBtn="ציונים" color="primary"></FuncClick>
-        <FuncClick nameBtn="מערכת" color="secondary"></FuncClick>
-        <FuncClick nameBtn="כיתות" color="secondary"></FuncClick>
-        <FuncClick nameBtn="לוח אירועים" color="secondary"></FuncClick>
+        <FuncClick nameBtn="Grades" color="primary"></FuncClick>
+        <FuncClick nameBtn="Schedule" color="secondary"></FuncClick>
+        <FuncClick nameBtn="Classes" color="secondary"></FuncClick>
+        <FuncClick nameBtn="announcements" color="secondary"></FuncClick>
         <FuncClick nameBtn="רישום שיעורי בית" color="secondary"></FuncClick>
-        <FuncClick nameBtn="משהו" color="secondary"></FuncClick>
-        <FuncClick nameBtn="משהו" color="secondary"></FuncClick>
-        <FuncClick nameBtn="משהו" color="secondary"></FuncClick>
+        <FuncClick nameBtn="something" color="secondary"></FuncClick>
+        <FuncClick nameBtn="something" color="secondary"></FuncClick>
+        <FuncClick nameBtn="something" color="secondary"></FuncClick>
       </div>
 
       {/* WebSocket чат */}

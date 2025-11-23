@@ -31,17 +31,17 @@ function Login() {
 
   return (
     <div>
-      <h2>התחברות</h2>
+      <h2>Login page</h2>
       <input
-        placeholder="שם משתמש"
+        placeholder="user name"
         onChange={(e) => setUsername(e.target.value)}
       />
       <input
-        placeholder="סיסמה"
+        placeholder="password"
         type="password"
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button onClick={handleLogin}>התחבר</button>
+      <button onClick={handleLogin}>login</button>
       <p>{message}</p>
     </div>
   );
